@@ -8,6 +8,8 @@
 // Handle to a heap.
 typedef struct heap_t heap_t;
 
+typedef struct alloc_info_t alloc_info_t;
+
 // Creates a new memory heap.
 // The grow increment is the default size with which the heap grows.
 // Should be a multiple of OS page size.
