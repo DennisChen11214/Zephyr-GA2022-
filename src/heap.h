@@ -8,6 +8,7 @@
 // Handle to a heap.
 typedef struct heap_t heap_t;
 
+// Holds the address, size, and call stack of memory that was allocated
 typedef struct alloc_info_t alloc_info_t;
 
 // Creates a new memory heap.

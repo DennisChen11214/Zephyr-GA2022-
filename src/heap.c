@@ -89,8 +89,10 @@ void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 			"OUT OF MEMORY!\n");
 		return NULL;
 	}
+	//Update the heap's pointer to the head of all the allocation information
 	info->next = heap->first_alloc;
 	heap->first_alloc = info;
+	//Record the size and memory address of the allocation
 	heap->first_alloc->size = size;
 	heap->first_alloc->address = address;
 
@@ -102,6 +104,7 @@ void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 void heap_free(heap_t* heap, void* address)
 {
 	alloc_info_t* current = heap->first_alloc;
+	//If the address is from the head of the heap's allocation info
 	if(current != NULL && current->address == address)
 	{
 		heap->first_alloc = current->next;
@@ -109,6 +112,7 @@ void heap_free(heap_t* heap, void* address)
 	}
 	else if(current != NULL)
 	{
+		//Find the address from the linked list of alloc info and remove and free the corresponding alloc info
 		while (current->next) 
 		{
 			if(current->next->address == address)
@@ -130,6 +134,7 @@ void heap_destroy(heap_t* heap)
 	tlsf_destroy(heap->tlsf);
 	alloc_info_t* current = heap->first_alloc;
 
+	//Go through all the unfreed allocations and print out their size and call stacks
 	while (current)
 	{
 		DWORD  error;
