@@ -112,7 +112,8 @@ void heap_free(heap_t* heap, void* address)
 	}
 	else if(current != NULL)
 	{
-		//Find the address from the linked list of alloc info and remove and free the corresponding alloc info
+		//Find the address from the linked list of alloc info
+		//Remove and free the corresponding alloc info
 		while (current->next) 
 		{
 			if(current->next->address == address)
