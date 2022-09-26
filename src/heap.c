@@ -1,6 +1,7 @@
 #include "heap.h"
 
 #include "debug.h"
+#include "mutex.h"
 #include "tlsf/tlsf.h"
 
 #include <stddef.h>
@@ -31,6 +32,7 @@ typedef struct heap_t
 	size_t grow_increment;
 	arena_t* arena;
 	alloc_info_t* first_alloc;
+	mutex_t* mutex;
 } heap_t;
 
 heap_t* heap_create(size_t grow_increment)
@@ -45,6 +47,7 @@ heap_t* heap_create(size_t grow_increment)
 		return NULL;
 	}
 
+	heap->mutex = mutex_create();
 	heap->grow_increment = grow_increment;
 	heap->tlsf = tlsf_create(heap + 1);
 	heap->arena = NULL;
@@ -55,6 +58,8 @@ heap_t* heap_create(size_t grow_increment)
 
 void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 {
+	mutex_lock(heap->mutex);
+
 	void* address = tlsf_memalign(heap->tlsf, alignment, size);
 	if (!address)
 	{
@@ -97,6 +102,7 @@ void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 	heap->first_alloc->address = address;
 
 	info->stack_frames = CaptureStackBackTrace(1, 256, info->stack, NULL);
+	mutex_unlock(heap->mutex);
 
 	return address;
 }
@@ -126,7 +132,9 @@ void heap_free(heap_t* heap, void* address)
 			current = current->next;
 		}
 	}
+	mutex_lock(heap->mutex);
 	tlsf_free(heap->tlsf, address);
+	mutex_unlock(heap->mutex);
 }
 
 void heap_destroy(heap_t* heap)
@@ -181,6 +189,8 @@ void heap_destroy(heap_t* heap)
 		VirtualFree(arena, 0, MEM_RELEASE);
 		arena = next;
 	}
+
+	mutex_destroy(heap->mutex);
 
 	VirtualFree(heap, 0, MEM_RELEASE);
 }
