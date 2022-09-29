@@ -286,7 +286,6 @@ static void file_write(fs_work_t* work)
 
 		heap_free(work->heap, work->buffer);
 
-		bytes_written += 8;
 	}
 	else 
 	{
@@ -296,9 +295,10 @@ static void file_write(fs_work_t* work)
 			CloseHandle(handle);
 			return;
 		}
+
+		work->size = bytes_written;
 	}
 
-	work->size = bytes_written;
 
 	CloseHandle(handle);
 
