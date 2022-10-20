@@ -2,7 +2,14 @@
 
 typedef struct heap_t heap_t;
 
+//Struct that stores all the information needed to do a trace
 typedef struct trace_t trace_t;
+
+//Struct that contains the pointer to the top of a stack
+typedef struct stack_t stack_t;
+
+//Struct that contains a stack element that stores a string and the previous and next elements
+typedef struct stack_element_t stack_element_t;
 
 // Creates a CPU performance tracing system.
 // Event capacity is the maximum number of durations that can be traced.

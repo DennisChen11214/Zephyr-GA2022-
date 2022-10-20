@@ -230,7 +230,6 @@ static void file_read(fs_work_t* work)
 		}
 	}
 
-
 	CloseHandle(handle);
 
 	if (work->use_compression)
@@ -242,6 +241,7 @@ static void file_read(fs_work_t* work)
 	{
 		event_signal(work->done);
 	}
+
 }
 
 int get_hash(void* address, int bucket_count)
@@ -314,6 +314,7 @@ static void file_write(fs_work_t* work)
 	CloseHandle(handle);
 
 	event_signal(work->done);
+
 }
 
 static void file_compress(fs_work_t* work)

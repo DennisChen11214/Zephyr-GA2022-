@@ -14,6 +14,7 @@
 
 #include <windows.h>
 
+static void homework2_test();
 static void homework3_test();
 
 int main(int argc, const char* argv[])
@@ -21,7 +22,6 @@ int main(int argc, const char* argv[])
 	debug_install_exception_handler();
 	timer_startup();
 
-	homework2_test();
 	homework3_test();
 
 	debug_set_print_mask(k_print_info | k_print_warning | k_print_error);
@@ -41,12 +41,12 @@ int main(int argc, const char* argv[])
 		uint32_t mask = wm_get_mouse_mask(window);
 
 		uint32_t now = timer_ticks_to_ms(timer_get_ticks());
-		debug_print(
+		/*debug_print(
 			k_print_info,
 			"T=%dms, MOUSE mask=%x move=%dx%d\n",
 			timer_object_get_ms(root_time),
 			mask,
-			x, y);
+			x, y);*/
 	}
 
 	timer_object_destroy(root_time);
@@ -116,16 +116,6 @@ static void homework3_test()
 
 	trace_destroy(trace);
 
-	heap_destroy(heap);
-}
-
-static void homework1_test()
-{
-	heap_t* heap = heap_create(4096);
-	void* block1 = homework1_allocate_1(heap);
-	/*leaked*/ homework1_allocate_2(heap);
-	/*leaked*/ homework1_allocate_3(heap);
-	heap_free(heap, block1);
 	heap_destroy(heap);
 }
 

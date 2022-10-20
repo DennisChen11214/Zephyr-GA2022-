@@ -1,0 +1,12 @@
+{
+	"displayTimeUnit": "ns", "traceEvents": [
+		{"name":"duration a","ph":"B","pid":0,"tid":"1","ts":"10"},
+		{"name":"duration b","ph":"B","pid":0,"tid":"1","ts":"12"},
+		{"name":"duration d","ph":"B","pid":0,"tid":"2","ts":"14"},
+		{"name":"duration c","ph":"B","pid":0,"tid":"1","ts":"15"},
+		{"name":"duration c","ph":"E","pid":0,"tid":"1","ts":"16"},
+		{"name":"duration b","ph":"E","pid":0,"tid":"1","ts":"17"},
+		{"name":"duration a","ph":"E","pid":0,"tid":"1","ts":"20"},
+		{"name":"duration d","ph":"E","pid":0,"tid":"2","ts":"24"}
+	]
+}
