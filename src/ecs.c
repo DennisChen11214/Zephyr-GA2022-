@@ -143,9 +143,9 @@ void* ecs_entity_get_component(ecs_t* ecs, ecs_entity_ref_t ref, int component_t
 	return NULL;
 }
 
-ecs_query_t ecs_query_create(ecs_t* ecs, uint64_t mask)
+ecs_query_t ecs_query_create(ecs_t* ecs, uint64_t mask, uint64_t unwanted_mask)
 {
-	ecs_query_t query = { .component_mask = mask, .entity = -1 };
+	ecs_query_t query = { .component_mask = mask, .unwanted_component_mask = unwanted_mask, .entity = -1 };
 	ecs_query_next(ecs, &query);
 	return query;
 }
@@ -159,6 +159,10 @@ void ecs_query_next(ecs_t* ecs, ecs_query_t* query)
 {
 	for (int i = query->entity + 1; i < _countof(ecs->component_masks); ++i)
 	{
+		if(ecs->component_masks[i] & query->unwanted_component_mask)
+		{
+			continue;
+		}
 		if ((ecs->component_masks[i] & query->component_mask) == query->component_mask && ecs->entity_states[i] >= k_entity_active)
 		{
 			query->entity = i;

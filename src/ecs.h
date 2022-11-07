@@ -22,6 +22,7 @@ typedef struct ecs_entity_ref_t
 typedef struct ecs_query_t
 {
 	uint64_t component_mask;
+	uint64_t unwanted_component_mask;
 	int entity;
 } ecs_query_t;
 
@@ -53,8 +54,8 @@ bool ecs_is_entity_ref_valid(ecs_t* ecs, ecs_entity_ref_t ref, bool allow_pendin
 // If allow_pending_add is true, will return component data for not fully spawned entities.
 void* ecs_entity_get_component(ecs_t* ecs, ecs_entity_ref_t ref, int component_type, bool allow_pending_add);
 
-// Creates a new entity query by component type mask.
-ecs_query_t ecs_query_create(ecs_t* ecs, uint64_t mask);
+// Creates a new entity query by component type mask and unwanted component type mask
+ecs_query_t ecs_query_create(ecs_t* ecs, uint64_t mask, uint64_t unwanted_mask);
 
 // Determines if the query points at a valid entity.
 bool ecs_query_is_valid(ecs_t* ecs, ecs_query_t* query);

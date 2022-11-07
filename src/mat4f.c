@@ -219,6 +219,33 @@ void mat4f_make_perspective(mat4f_t* m, float angle, float aspect, float z_near,
 	m->data[3][3] = 0.0f;
 }
 
+void mat4f_make_orthographic(mat4f_t* m, float aspect, float height, float z_near, float z_far)
+{
+	z_near = __max(FLT_EPSILON, z_near);
+
+	float width = aspect * height;
+
+	m->data[0][0] = 2.0f / width;
+	m->data[0][1] = 0.0f;
+	m->data[0][2] = 0.0f;
+	m->data[0][3] = 0.0f;
+
+	m->data[1][0] = 0.0f;
+	m->data[1][1] = 2.0f / height;
+	m->data[1][2] = 0.0f;
+	m->data[1][3] = 0.0f;
+
+	m->data[2][0] = 0.0f;
+	m->data[2][1] = 0.0f;
+	m->data[2][2] = -2.0f / (z_far - z_near);
+	m->data[2][3] = 0.0f;
+
+	m->data[3][0] = 0.0f;
+	m->data[3][1] = 0.0f;
+	m->data[3][2] = 0.0f;
+	m->data[3][3] = 1.0f;
+}
+
 void mat4f_make_lookat(mat4f_t* m, const vec3f_t* eye, const vec3f_t* dir, const vec3f_t* up)
 {
 	vec3f_t z_vec = vec3f_negate(vec3f_norm(*dir));

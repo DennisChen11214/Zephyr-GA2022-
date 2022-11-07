@@ -109,6 +109,7 @@ void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 
 void heap_free(heap_t* heap, void* address)
 {
+	mutex_lock(heap->mutex);
 	alloc_info_t* current = heap->first_alloc;
 	//If the address is from the head of the heap's allocation info
 	if(current != NULL && current->address == address)
@@ -132,7 +133,6 @@ void heap_free(heap_t* heap, void* address)
 			current = current->next;
 		}
 	}
-	mutex_lock(heap->mutex);
 	tlsf_free(heap->tlsf, address);
 	mutex_unlock(heap->mutex);
 }

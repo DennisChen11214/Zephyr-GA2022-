@@ -217,7 +217,7 @@ static void update_players(simple_game_t* game)
 
 	uint64_t k_query_mask = (1ULL << game->transform_type) | (1ULL << game->player_type);
 
-	for (ecs_query_t query = ecs_query_create(game->ecs, k_query_mask);
+	for (ecs_query_t query = ecs_query_create(game->ecs, k_query_mask, 0);
 		ecs_query_is_valid(game->ecs, &query);
 		ecs_query_next(game->ecs, &query))
 	{
@@ -254,14 +254,14 @@ static void update_players(simple_game_t* game)
 static void draw_models(simple_game_t* game)
 {
 	uint64_t k_camera_query_mask = (1ULL << game->camera_type);
-	for (ecs_query_t camera_query = ecs_query_create(game->ecs, k_camera_query_mask);
+	for (ecs_query_t camera_query = ecs_query_create(game->ecs, k_camera_query_mask, 0);
 		ecs_query_is_valid(game->ecs, &camera_query);
 		ecs_query_next(game->ecs, &camera_query))
 	{
 		camera_component_t* camera_comp = ecs_query_get_component(game->ecs, &camera_query, game->camera_type);
 
 		uint64_t k_model_query_mask = (1ULL << game->transform_type) | (1ULL << game->model_type);
-		for (ecs_query_t query = ecs_query_create(game->ecs, k_model_query_mask);
+		for (ecs_query_t query = ecs_query_create(game->ecs, k_model_query_mask, 0);
 			ecs_query_is_valid(game->ecs, &query);
 			ecs_query_next(game->ecs, &query))
 		{
