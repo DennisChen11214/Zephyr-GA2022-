@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9340889F-DEF4-3297-9486-C67047E00D15}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{E836BAE9-00ED-3F96-A2B7-D7F83B8EBAF8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ODE.vcxproj">
+      <Project>{CFCC66BB-2289-3E70-B4A7-944A6A3D0484}</Project>
+      <Name>ODE</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_I.vcxproj">
+      <Project>{40F8B0D7-C1E3-3F53-BDC3-C7498F437BF9}</Project>
+      <Name>demo_I</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_basket.vcxproj">
+      <Project>{735C61F9-1FE9-3CB4-9DA2-A3D465D0FCE3}</Project>
+      <Name>demo_basket</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_boxstack.vcxproj">
+      <Project>{948E5AA7-1563-3E19-99EC-6BD025201639}</Project>
+      <Name>demo_boxstack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_buggy.vcxproj">
+      <Project>{B29D0905-892B-3FB2-BD5B-2964F8B13417}</Project>
+      <Name>demo_buggy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_cards.vcxproj">
+      <Project>{8C538415-B625-3024-A146-10F80D7CB0BC}</Project>
+      <Name>demo_cards</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_chain1.vcxproj">
+      <Project>{A505D014-709F-3D9E-B034-29BA7798D24C}</Project>
+      <Name>demo_chain1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_chain2.vcxproj">
+      <Project>{B4B59828-EC24-37F5-80A9-4133B01B6AB6}</Project>
+      <Name>demo_chain2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_collision.vcxproj">
+      <Project>{11412685-89B4-3E0C-9CBF-0CFB41EA3422}</Project>
+      <Name>demo_collision</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_convex.vcxproj">
+      <Project>{6FE8197E-DCAB-3BAE-AFB7-1843B173D7CF}</Project>
+      <Name>demo_convex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_crash.vcxproj">
+      <Project>{6B242082-29AD-34FD-8885-8CDF2E8AF431}</Project>
+      <Name>demo_crash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_cyl.vcxproj">
+      <Project>{296F25DF-C982-384B-81EF-2DE06050B7BF}</Project>
+      <Name>demo_cyl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_cylvssphere.vcxproj">
+      <Project>{21F8DF1D-0FC6-3B96-A80B-F752A858BDA7}</Project>
+      <Name>demo_cylvssphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_dball.vcxproj">
+      <Project>{7C562C8C-F49E-3AAB-BD27-E970EF5CC0F0}</Project>
+      <Name>demo_dball</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_dhinge.vcxproj">
+      <Project>{C88BCE88-F642-3836-A281-F7552EC11BE4}</Project>
+      <Name>demo_dhinge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_feedback.vcxproj">
+      <Project>{B21A97C5-0803-330C-B8A1-ECDB056310A8}</Project>
+      <Name>demo_feedback</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_friction.vcxproj">
+      <Project>{69B9D839-AD86-33DD-BC46-05AE0D33BFE8}</Project>
+      <Name>demo_friction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_gyro2.vcxproj">
+      <Project>{032FA5DB-54B6-3A78-BC8C-801DDF2E4DDF}</Project>
+      <Name>demo_gyro2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_gyroscopic.vcxproj">
+      <Project>{A903A31C-6BAC-300D-818B-310FF4ECF814}</Project>
+      <Name>demo_gyroscopic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_heightfield.vcxproj">
+      <Project>{F356EADE-E633-3B20-ABEA-FD80CF75061D}</Project>
+      <Name>demo_heightfield</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_hinge.vcxproj">
+      <Project>{BA54FD68-BF04-329D-B980-51FEF86C91E4}</Project>
+      <Name>demo_hinge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_jointPR.vcxproj">
+      <Project>{3507E4D9-AD85-3423-A6E4-0308651727BD}</Project>
+      <Name>demo_jointPR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_jointPU.vcxproj">
+      <Project>{0FEC9B31-8E83-31EF-9B93-970BA1151DC2}</Project>
+      <Name>demo_jointPU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_joints.vcxproj">
+      <Project>{590B15E5-D46F-3BA5-B1A9-A851792139EA}</Project>
+      <Name>demo_joints</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_kinematic.vcxproj">
+      <Project>{6033D17E-370E-32F4-AD74-C0C8A436E59F}</Project>
+      <Name>demo_kinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_motion.vcxproj">
+      <Project>{720FD59E-DACC-3617-AE00-1C31A9840A85}</Project>
+      <Name>demo_motion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_motor.vcxproj">
+      <Project>{A54FAFEE-1695-3664-9DDF-DF483C9DB612}</Project>
+      <Name>demo_motor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_moving_convex.vcxproj">
+      <Project>{418C1379-F3A4-3519-9248-F8DC1498C45A}</Project>
+      <Name>demo_moving_convex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_moving_trimesh.vcxproj">
+      <Project>{470E199A-7288-3A1A-B96D-EBAC81EECFFF}</Project>
+      <Name>demo_moving_trimesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_ode.vcxproj">
+      <Project>{98C9F766-E0E0-32BE-BDE3-724CD8278628}</Project>
+      <Name>demo_ode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_piston.vcxproj">
+      <Project>{3A4C93C6-8A3E-3833-90F5-0E5DC1A04C2E}</Project>
+      <Name>demo_piston</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_plane2d.vcxproj">
+      <Project>{3A3E3A8A-6062-3F39-B583-05EDB8FAC206}</Project>
+      <Name>demo_plane2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_rfriction.vcxproj">
+      <Project>{5D2A67C7-7C8C-3326-B995-3C2AC66BA01B}</Project>
+      <Name>demo_rfriction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_slider.vcxproj">
+      <Project>{ACEEE1EE-B129-3D89-AB71-6CB57E44AB8F}</Project>
+      <Name>demo_slider</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_space.vcxproj">
+      <Project>{382C98E7-668F-32C0-9A13-60242714A1C6}</Project>
+      <Name>demo_space</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_space_stress.vcxproj">
+      <Project>{073B5901-937D-38BB-A11E-A67D5BDA4B33}</Project>
+      <Name>demo_space_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_step.vcxproj">
+      <Project>{F53A78CB-5CE7-3B41-B230-66EFCFD2417E}</Project>
+      <Name>demo_step</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_tracks.vcxproj">
+      <Project>{1EA5B049-3BDB-3A1C-B588-A01F31361C5A}</Project>
+      <Name>demo_tracks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_transmission.vcxproj">
+      <Project>{BE64EACD-5219-3570-A395-E061EF023C74}</Project>
+      <Name>demo_transmission</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\demo_trimesh.vcxproj">
+      <Project>{CA8D770D-2591-3A63-8AA7-BF7C7A446AC8}</Project>
+      <Name>demo_trimesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\drawstuff.vcxproj">
+      <Project>{56E995CB-A6E3-3D6F-B05B-179944CA6D8D}</Project>
+      <Name>drawstuff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\tests.vcxproj">
+      <Project>{52DE0390-65DE-31D5-B7A0-95B9A2624588}</Project>
+      <Name>tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

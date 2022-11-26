@@ -679,10 +679,6 @@ void gpu_destroy(gpu_t* gpu)
 				vkDestroyImageView(gpu->logical_device, gpu->frames[i].view, NULL);
 			}
 		}
-		for (uint32_t i = 0; i < gpu->frame_count; i++)
-		{
-			heap_free(gpu->heap, gpu->frames[i].cmd_buffer);
-		}
 		heap_free(gpu->heap, gpu->frames);
 	}
 	if (gpu && gpu->descriptor_pool)

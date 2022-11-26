@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CFCC66BB-2289-3E70-B4A7-944A6A3D0484}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ODE</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ODE.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ode_doubled</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ODE.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ode_double</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ODE.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ode_double</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ODE.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ode_double</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR="Debug";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR=\"Debug\";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/Debug/ode_doubled.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/Debug/ode_doubled.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR="Release";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR=\"Release\";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/Release/ode_double.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/Release/ode_double.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR="MinSizeRel";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR=\"MinSizeRel\";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/MinSizeRel/ode_double.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/MinSizeRel/ode_double.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR="RelWithDebInfo";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_OU_NAMESPACE=odeou;_OU_FEATURE_SET=_OU_FEATURE_SET_ATOMICS;_OU_TARGET_OS=_OU_TARGET_OS_WINDOWS;dNODEBUG;dOU_ENABLED;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;ODE_DLL;dIDEDOUBLE;CCD_IDEDOUBLE;dBUILTIN_THREADING_IMPL_ENABLED;dTRIMESH_ENABLED;dTRIMESH_OPCODE;dATOMICS_ENABLED;CMAKE_INTDIR=\"RelWithDebInfo\";ODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\include;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/RelWithDebInfo/ode_double.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/RelWithDebInfo/ode_double.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019 --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\array.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\array.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\box.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\capsule.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_cylinder_box.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_cylinder_plane.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_cylinder_sphere.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_kernel.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_kernel.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_quadtreespace.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_sapspace.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_space.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_space_internal.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_std.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_transform.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_transform.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_colliders.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_disabled.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_gimpact.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_internal.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_opcode.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_util.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_util.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\common.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\convex.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\coop_matrix_types.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\cylinder.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\default_threading.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\default_threading.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\error.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\error.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\export-dif.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastdot.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastdot_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastldltfactor.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastldltfactor_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastldltsolve.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastldltsolve_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastlsolve.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastlsolve_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastltsolve.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastltsolve_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastvecscale.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\fastvecscale_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\heightfield.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\heightfield.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\lcp.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\lcp.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\mass.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\mat.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\mat.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\matrix.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\matrix.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\memory.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\misc.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\nextafterf.c" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\objects.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\objects.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\obstack.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\obstack.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\ode.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odeinit.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odemath.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odemath.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odeou.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odetls.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\plane.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\quickstep.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\quickstep.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\ray.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\resource_control.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\resource_control.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\rotation.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\simple_cooperative.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\simple_cooperative.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\sphere.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\step.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\step.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threaded_solver_ldlt.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_atomics_provs.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_base.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_base.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_fake_sync.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_impl.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_impl.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_impl_posix.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_impl_templates.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_impl_win.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_pool_posix.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threading_pool_win.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\threadingutils.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\timer.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\typedefs.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\util.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\util.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\amotor.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\amotor.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\ball.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\ball.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\contact.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\contact.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\dball.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\dball.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\dhinge.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\dhinge.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\fixed.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\fixed.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\hinge.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\hinge.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\hinge2.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\hinge2.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\joint.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\joint.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\joint_internal.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\joints.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\lmotor.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\lmotor.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\null.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\null.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\piston.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\piston.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\plane2d.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\plane2d.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\pr.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\pr.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\pu.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\pu.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\slider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\slider.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\transmission.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\transmission.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\universal.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\joints\universal.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_convex_trimesh.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_cylinder_trimesh.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_box.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_ccylinder.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_internal.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_internal_impl.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_opcode.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_plane.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_ray.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_sphere.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_trimesh.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\collision_trimesh_trimesh_old.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_AABBCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_AABBCollider.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_AABBTree.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_AABBTree.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_BaseModel.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_BaseModel.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_BoxBoxOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Collider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Collider.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Common.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Common.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_HybridModel.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_HybridModel.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_IceHook.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_LSSAABBOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_LSSCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_LSSCollider.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_LSSTriOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_MeshInterface.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_MeshInterface.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Model.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Model.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_OBBCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_OBBCollider.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_OptimizedTree.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_OptimizedTree.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Picking.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Picking.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_PlanesAABBOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_PlanesCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_PlanesCollider.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_PlanesTriOverlap.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_RayAABBOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_RayCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_RayCollider.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_RayTriOverlap.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_Settings.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_SphereAABBOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_SphereCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_SphereCollider.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_SphereTriOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TreeBuilders.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TreeBuilders.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TreeCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TreeCollider.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TriBoxOverlap.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_TriTriOverlap.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_VolumeCollider.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\OPC_VolumeCollider.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Opcode.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Opcode.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Stdafx.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceAABB.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceAABB.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceAxes.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceBoundingSphere.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceContainer.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceContainer.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceFPU.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceHPoint.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceHPoint.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceIndexedTriangle.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceIndexedTriangle.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceLSS.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceMatrix3x3.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceMatrix3x3.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceMatrix4x4.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceMatrix4x4.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceMemoryMacros.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceOBB.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceOBB.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePairs.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePlane.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePlane.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePoint.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePoint.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IcePreprocessor.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRandom.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRandom.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRay.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRay.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRevisitedRadix.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceRevisitedRadix.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceSegment.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceSegment.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceTriangle.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceTriangle.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceTriList.h" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceTypes.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceUtils.cpp" />
+    <ClInclude Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\OPCODE\Ice\IceUtils.h" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odeou.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode\src\odetls.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\src\ou\atomic.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\src\ou\customization.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\src\ou\malloc.cpp" />
+    <ClCompile Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ou\src\ou\threadlocalstorage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{E836BAE9-00ED-3F96-A2B7-D7F83B8EBAF8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

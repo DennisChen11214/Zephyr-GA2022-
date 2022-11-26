@@ -7,9 +7,12 @@
 #include "transform.h"
 #include "wm.h"
 
+#include <ode/ode.h>
+
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <string.h>
+
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -123,6 +126,7 @@ frogger_game_t* frogger_game_create(heap_t* heap, fs_t* fs, wm_window_t* window,
 	spawn_camera(game);
 
 	return game;
+
 }
 
 void frogger_game_destroy(frogger_game_t* game)

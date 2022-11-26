@@ -7,6 +7,7 @@
 #include <stddef.h>
 #include <stdio.h>
 
+
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <DbgHelp.h>
@@ -101,8 +102,8 @@ void* heap_alloc(heap_t* heap, size_t size, size_t alignment)
 	heap->first_alloc->size = size;
 	heap->first_alloc->address = address;
 
-	info->stack_frames = CaptureStackBackTrace(1, 256, info->stack, NULL);
-	mutex_unlock(heap->mutex);
+	info->stack_frames = CaptureStackBackTrace(1, 8, info->stack, NULL);
+	mutex_unlock(heap->mutex); 
 
 	return address;
 }

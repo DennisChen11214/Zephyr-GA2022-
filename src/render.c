@@ -101,11 +101,6 @@ void render_destroy(render_t* render)
 {
 	queue_push(render->queue, NULL);
 	thread_destroy(render->thread);
-	for (int i = 0; i < _countof(render->instances); i++) 
-	{
-		heap_free(render->heap, render->instances[i].uniform_buffers);
-		heap_free(render->heap, render->instances[i].descriptors);
-	}
 	queue_destroy(render->queue);
 	heap_free(render->heap, render);
 }
