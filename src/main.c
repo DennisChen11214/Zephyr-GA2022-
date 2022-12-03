@@ -3,7 +3,7 @@
 #include "heap.h"
 #include "render.h"
 #include "simple_game.h"
-#include "frogger_game.h"
+#include "final_game.h"
 #include "timer.h"
 #include "wm.h"
 
@@ -19,17 +19,17 @@ int main(int argc, const char* argv[])
 	wm_window_t* window = wm_create(heap);
 	render_t* render = render_create(heap, window);
 
-	frogger_game_t* game = frogger_game_create(heap, fs, window, render, 16.0f/9.0f, 8.0f);
+	final_game_t* game = final_game_create(heap, fs, window, render, 16.0f/9.0f, 8.0f);
 
 	while (!wm_pump(window))
 	{
-		frogger_game_update(game);
+		final_game_update(game);
 	}
 
 	/* XXX: Shutdown render before the game. Render uses game resources. */
 	render_destroy(render);
 
-	frogger_game_destroy(game);
+	final_game_destroy(game);
 
 	wm_destroy(window);
 	fs_destroy(fs);

@@ -15,10 +15,6 @@
 #include <math.h>
 #include <string.h>
 
-typedef struct transform_component_t
-{
-	transform_t transform;
-} transform_component_t;
 
 typedef struct camera_component_t
 {

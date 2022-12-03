@@ -53,7 +53,7 @@ extern "C" {
 
 /* floating point data type, vector, matrix and quaternion types */
 
-#define dDOUBLE
+#define dSINGLE
 
 #if defined(dSINGLE)
 typedef float dReal;

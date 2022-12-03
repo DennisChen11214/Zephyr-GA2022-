@@ -15,6 +15,15 @@ typedef struct transform_t
 	quatf_t rotation;
 } transform_t;
 
+typedef struct rigidbody_component_t rigidbody_component_t;
+
+typedef struct box_collider_component_t box_collider_component_t;
+
+typedef struct transform_component_t
+{
+	transform_t transform;
+} transform_component_t;
+
 // Make a transform with no rotation, unit scale, and zero position.
 void transform_identity(transform_t* transform);
 

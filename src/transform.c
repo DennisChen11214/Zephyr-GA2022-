@@ -1,4 +1,6 @@
 #include "transform.h"
+#include "rigidbody.h"
+#include "box_collider.h"
 
 void transform_identity(transform_t* transform)
 {

@@ -1,0 +1,49 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/BasicConfigVersion-ExactVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Templates/CPackConfig.cmake.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/3.20.2/CMakeCCompiler.cmake
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/3.20.2/CMakeRCCompiler.cmake
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/3.20.2/CMakeSystem.cmake
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/cmake/cmake_uninstall.cmake.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/config.h.cmake.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/include/ode/precision.h.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/include/ode/version.h.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/libccd/src/ccd/precision.h.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/ode-config.cmake.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/ode-config.in
+C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/ode.pc.in

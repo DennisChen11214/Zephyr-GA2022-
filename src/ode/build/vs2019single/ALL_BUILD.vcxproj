@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6748F6AD-8809-3765-BB9F-3B8382C33214}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode -BC:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single --check-stamp-file C:/Users/denni/Documents/GitHub/Zephyr-ga2022-/src/ode/build/vs2019single/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\3.20.2\CMakeSystem.cmake;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\cmake\cmake_uninstall.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\config.h.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\include\ode\version.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\libccd\src\ccd\precision.h.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.cmake.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode-config.in;C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\ode.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\ZERO_CHECK.vcxproj">
+      <Project>{811472CA-9EE1-3001-8B5C-8C4E03461D8B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\ODE.vcxproj">
+      <Project>{931C6394-410D-3F4A-87CE-6AC549E29C4D}</Project>
+      <Name>ODE</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_I.vcxproj">
+      <Project>{B0465185-60EB-30D9-894A-6A7FE1CCE7EB}</Project>
+      <Name>demo_I</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_basket.vcxproj">
+      <Project>{F8F3F8EB-B214-3D88-992F-90D9BDC33F1A}</Project>
+      <Name>demo_basket</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_boxstack.vcxproj">
+      <Project>{49FECFCF-0DFF-35BF-B10B-D8E0ADC86520}</Project>
+      <Name>demo_boxstack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_buggy.vcxproj">
+      <Project>{10524BAC-CCFE-36B5-A610-DB0DA51843B4}</Project>
+      <Name>demo_buggy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_cards.vcxproj">
+      <Project>{53784897-BACD-345C-9543-B566E6022019}</Project>
+      <Name>demo_cards</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_chain1.vcxproj">
+      <Project>{B1E88812-8F58-3F1C-B012-6742CACB7D17}</Project>
+      <Name>demo_chain1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_chain2.vcxproj">
+      <Project>{E76C04CF-135B-3382-BB95-0B5BE7526700}</Project>
+      <Name>demo_chain2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_collision.vcxproj">
+      <Project>{39DF1370-466B-3200-8B84-CFD03E880CA8}</Project>
+      <Name>demo_collision</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_convex.vcxproj">
+      <Project>{2992FFF6-C668-3B17-A4A6-B7598BF6B8C1}</Project>
+      <Name>demo_convex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_crash.vcxproj">
+      <Project>{691F01B0-B39F-3E90-845C-D6175E06F5E0}</Project>
+      <Name>demo_crash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_cyl.vcxproj">
+      <Project>{459B9DDF-4CA5-34C7-BD0A-64A623588986}</Project>
+      <Name>demo_cyl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_cylvssphere.vcxproj">
+      <Project>{4F5DFFB3-6839-3C42-9FEF-B5665024C05F}</Project>
+      <Name>demo_cylvssphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_dball.vcxproj">
+      <Project>{B0CF5418-F4CE-34D0-8951-CCF85BE41871}</Project>
+      <Name>demo_dball</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_dhinge.vcxproj">
+      <Project>{8053D6B6-4C73-3AB3-835B-81D3256A9ED9}</Project>
+      <Name>demo_dhinge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_feedback.vcxproj">
+      <Project>{A6572170-B46F-3E39-9399-55D45539A9C3}</Project>
+      <Name>demo_feedback</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_friction.vcxproj">
+      <Project>{B056F934-7CFF-31B7-8C1C-6ECC15A23307}</Project>
+      <Name>demo_friction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_gyro2.vcxproj">
+      <Project>{2673BCAC-2ECA-39EE-9363-024CB7EC151F}</Project>
+      <Name>demo_gyro2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_gyroscopic.vcxproj">
+      <Project>{134DAD9B-1543-34BA-80DE-D5291623AB67}</Project>
+      <Name>demo_gyroscopic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_heightfield.vcxproj">
+      <Project>{53AB3724-579A-38B7-A420-EEEF409BF008}</Project>
+      <Name>demo_heightfield</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_hinge.vcxproj">
+      <Project>{19847353-AEC3-39E7-8DB6-B196762B59C4}</Project>
+      <Name>demo_hinge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_jointPR.vcxproj">
+      <Project>{26FEC968-0301-395A-865D-DA08D726A8EE}</Project>
+      <Name>demo_jointPR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_jointPU.vcxproj">
+      <Project>{5A94A6D0-F0AD-3F11-87B2-9160322AEFC4}</Project>
+      <Name>demo_jointPU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_joints.vcxproj">
+      <Project>{3A62AB5C-FE12-3BDA-81B8-3A3B6A73B1C5}</Project>
+      <Name>demo_joints</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_kinematic.vcxproj">
+      <Project>{53CD26B9-4D80-385C-B089-51BFD996BD01}</Project>
+      <Name>demo_kinematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_motion.vcxproj">
+      <Project>{B68B66AD-2122-34D8-B846-500057F8496B}</Project>
+      <Name>demo_motion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_motor.vcxproj">
+      <Project>{99043C00-338D-3C64-A051-58CAF4C7B4FB}</Project>
+      <Name>demo_motor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_moving_convex.vcxproj">
+      <Project>{BA5C68D4-0046-3399-A956-B8BF27D78A7A}</Project>
+      <Name>demo_moving_convex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_moving_trimesh.vcxproj">
+      <Project>{DE705B3C-DD87-3F24-9B71-649E3DABC758}</Project>
+      <Name>demo_moving_trimesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_ode.vcxproj">
+      <Project>{60189F07-1341-3FF3-8ED5-FA542A90A721}</Project>
+      <Name>demo_ode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_piston.vcxproj">
+      <Project>{4871DD95-BD7F-3C59-8BD2-656A4E575916}</Project>
+      <Name>demo_piston</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_plane2d.vcxproj">
+      <Project>{E968D7D5-ECB0-3758-B610-4ED4E05E9704}</Project>
+      <Name>demo_plane2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_rfriction.vcxproj">
+      <Project>{4D5C659C-06CE-374C-9F95-9AB134F65907}</Project>
+      <Name>demo_rfriction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_slider.vcxproj">
+      <Project>{DACFE001-AADC-36EF-A6CC-73684E9EE6AF}</Project>
+      <Name>demo_slider</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_space.vcxproj">
+      <Project>{7CBE62FE-368E-3C29-85F0-3D31C8647BBE}</Project>
+      <Name>demo_space</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_space_stress.vcxproj">
+      <Project>{8B97D22A-ECD1-30B0-8485-A0E602D4C7F6}</Project>
+      <Name>demo_space_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_step.vcxproj">
+      <Project>{6A2FE797-2952-36F5-8301-B63EA006E4B3}</Project>
+      <Name>demo_step</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_tracks.vcxproj">
+      <Project>{72AEF776-4C4F-3537-9088-0356382EB3EE}</Project>
+      <Name>demo_tracks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_transmission.vcxproj">
+      <Project>{5A8B22B1-8887-3108-B1E0-FEEFEFC752E7}</Project>
+      <Name>demo_transmission</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\demo_trimesh.vcxproj">
+      <Project>{6CFEF819-04D1-3B4D-BDC7-79B6827EB632}</Project>
+      <Name>demo_trimesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\drawstuff.vcxproj">
+      <Project>{EC2EA9F4-0DC5-3B06-877C-7978132B3343}</Project>
+      <Name>drawstuff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denni\Documents\GitHub\Zephyr-ga2022-\src\ode\build\vs2019single\tests.vcxproj">
+      <Project>{7F9D7F9C-7630-3451-9FBE-F2BB5F71C19C}</Project>
+      <Name>tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
