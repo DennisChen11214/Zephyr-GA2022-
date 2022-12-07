@@ -4,10 +4,13 @@
 
 #include <ode/ode.h>
 
-void create_box_collider(box_collider_component_t* box, rigidbody_component_t* rb, float length, float width, float height)
+void create_box_collider(box_collider_component_t* box, rigidbody_component_t* rb, dSpaceID space, float length, float width, float height)
 {
-	box->box_collider = dCreateBox(NULL, length, width, height);
+	dMass m;
+	dMassSetBox(&m, 5, length, width, height);
+	box->box_collider = dCreateBox(space, length, width, height);
 	dGeomSetBody(box->box_collider, rb->rigidbody);
+	dBodySetMass(rb->rigidbody, &m);
 	box->rb = rb;
 }
 
@@ -37,4 +40,11 @@ void enable_box_collider(box_collider_component_t* box)
 void disable_box_collider(box_collider_component_t* box)
 {
 	dGeomDisable(box->box_collider);
+}
+
+int check_collide(box_collider_component_t* col1, box_collider_component_t* col2) 
+{
+	dContact contact[8];
+	int num_contacts = dCollide(col1->box_collider, col2->box_collider, 8, &contact[0].geom, sizeof(dContact));
+	return num_contacts;
 }

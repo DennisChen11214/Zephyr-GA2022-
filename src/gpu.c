@@ -927,7 +927,7 @@ gpu_pipeline_t* gpu_pipeline_create(gpu_t* gpu, const gpu_pipeline_info_t* info)
 		.sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO,
 		.polygonMode = VK_POLYGON_MODE_FILL,
 		.cullMode = VK_CULL_MODE_BACK_BIT,
-		.frontFace = VK_FRONT_FACE_CLOCKWISE,
+		.frontFace = VK_FRONT_FACE_COUNTER_CLOCKWISE,
 		.lineWidth = 1.0f,
 	};
 

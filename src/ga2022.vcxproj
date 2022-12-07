@@ -168,6 +168,7 @@
     <ClCompile Include="mat4f.c" />
     <ClCompile Include="mutex.c" />
     <ClCompile Include="net.c" />
+    <ClCompile Include="physics.c" />
     <ClCompile Include="quatf.c" />
     <ClCompile Include="queue.c" />
     <ClCompile Include="render.c" />
@@ -199,6 +200,7 @@
     <ClInclude Include="math.h" />
     <ClInclude Include="mutex.h" />
     <ClInclude Include="net.h" />
+    <ClInclude Include="physics.h" />
     <ClInclude Include="quatf.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="render.h" />

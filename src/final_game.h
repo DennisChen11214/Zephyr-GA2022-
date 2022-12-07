@@ -15,6 +15,3 @@ void final_game_destroy(final_game_t* game);
 
 // Per-frame update for our final game
 void final_game_update(final_game_t* game);
-
-//Physics update for our final game
-void final_game_fixed_update(final_game_t* game);

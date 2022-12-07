@@ -51,6 +51,9 @@ __forceinline vec3f_t quatf_rotate_vec(quatf_t q, vec3f_t v)
 	return vec3f_add(v, vec3f_add(vec3f_scale(t, q.w), vec3f_cross(q.v3, t)));
 }
 
+// Returns the quaternion calculated from a forward direction and up vector
+quatf_t quatf_look_at(vec3f_t dir, vec3f_t up);
+
 // Converts a quaternion to representation with 3 angles in radians: roll, yaw, pitch.
 vec3f_t quatf_to_eulers(quatf_t q);
 

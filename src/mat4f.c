@@ -195,27 +195,30 @@ void mat4f_make_perspective(mat4f_t* m, float angle, float aspect, float z_near,
 	aspect = __max(FLT_EPSILON, aspect);
 	z_near = __max(FLT_EPSILON, z_near);
 
-	float tan_half_vfov = tanf(angle * 0.5f);
-	float a = 1.0f / tan_half_vfov;
+	float tan_half_vfov = tanf(angle * 0.5f) * z_near;
+	float r = aspect * tan_half_vfov;
+	float l = -r;
+	float t = tan_half_vfov;
+	float b = -t;
 
-	m->data[0][0] = 1.0f / (tan_half_vfov * aspect);
+	m->data[0][0] = 2 * z_near / (r - l);
 	m->data[0][1] = 0.0f;
 	m->data[0][2] = 0.0f;
 	m->data[0][3] = 0.0f;
 
 	m->data[1][0] = 0.0f;
-	m->data[1][1] = a;
+	m->data[1][1] = -2 * z_near / (t - b);
 	m->data[1][2] = 0.0f;
 	m->data[1][3] = 0.0f;
 
-	m->data[2][0] = 0.0f;
-	m->data[2][1] = 0.0f;
-	m->data[2][2] = 0.0f;
+	m->data[2][0] = (r + l) / (r - l);
+	m->data[2][1] = (t + b) / (t - b);
+	m->data[2][2] = -(z_far + z_near) / (z_far - z_near);
 	m->data[2][3] = -1.0f;
 
 	m->data[3][0] = 0.0f;
 	m->data[3][1] = 0.0f;
-	m->data[3][2] = z_near;
+	m->data[3][2] = -2 * z_far * z_near / (z_far - z_near);
 	m->data[3][3] = 0.0f;
 }
 
